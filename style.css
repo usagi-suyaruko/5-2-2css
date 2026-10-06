@@ -1,0 +1,45 @@
+h1{
+    color: purple;/*いるか知らんが"紫"色に*/
+    font-size: 32px;/*見出しは大きく*/
+    font-weight: bold;/*太字に*/
+}
+p{
+    font-size: 16px;/*基本文字のサイズ*/
+    color: gray;
+    font-weight: bold;/*太字に*/
+}
+.highlight{
+    background-color: yellow;
+}
+#header {
+    background-color: navy;
+    color: #ffff;
+}
+#DV-man {
+    width: 300px;
+    height: 200px;
+    /*コンテンツ領域のサイズ*/
+
+    padding: 20px;
+    /*内側の余白（上下全てpx）*/
+
+    border: 2px solid #000;
+    /*枠線の黒い実線*/
+
+    margin: 30px;
+    /*外がの余白（上下全て30px）*/
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;/*水平方向に中央揃え*/
+    align-items: center;/*垂直方向に中央揃え*/
+}
+@media (max-width: 768px){
+    .sidebar{
+        display:  none;/*サイドバーを非表示に*/
+    }
+    .container{
+        display: block;/*横並びに戻す*/
+    }
+}
